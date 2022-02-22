@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(21, 21, 21);
+    font-family: 'Helvetica' ;
+    font-size: 16px;
+    color: blanchedalmond;
+    overflow-x: hidden;
+}
+
+/* Header */
+header{
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.center{
+    max-width: 1200px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 0 0.1%;
+    display: flex;
+    align-items: center;
+}
+.clear{
+    clear: both;
+}
+/* header_left */
+.header_left{
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.menu_header{
+    margin-left: 30px;
+}
+.menu_header ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu_header li {
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 24px;
+    transition: .4s;
+}
+.menu_header a{
+    color: white;
+    font-weight: bold;
+}
+.menu_header a:hover{
+    color: rgb(88, 91, 93);
+}
+/* header_right */
+.header_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    margin: 3px;
+}
+.search,
+.notification,
+.user{
+    display: inline-block;
+    margin-right: 5px;
+}
+.notification{
+    position: relative;
+}
+.circle_notification{
+    position: absolute;
+    top: -7px;
+    left: 12px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: rgb(240, 0, 0);
+    text-align: center;
+    vertical-align: 20px;
+}
+.circle_notification span{
+    font-size: 10px;
+    color: white;
+}
+.header_right i{
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.user{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.user img{
+    max-width: 35px;
+    margin-right: 5px;
+}
+/* Change background header */
+.active-header{
+    background: rgb(21, 21, 21);
+}
+
+/* Destaque */
+section.destaque{
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.destaque::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/capa1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    z-index: 2;
+}
+.info_destaque{
+    z-index: 3;
+    position: relative;
+    color: white;
+    padding-top: 100px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 100px;
+}
+.sinopse{
+    line-height: normal;
+    width: 40%;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    margin: 20px 0 20px 0;
+}
+.sinopse h3{
+    margin: 20px 0;
+    font-size: 25px;
+}
+.info_destaque a{
+    padding: 8px 20px;
+    display: inline-block;  
+    border-radius: 4px;
+    margin-right: 11px;
+    color: black;
+    background-color: blanchedalmond;
+}
+.info_destaque a:hover{
+    background-color: rgb(144, 150, 153);
+}
+.info_destaque button{
+    padding: 10px 20px;
+    display: inline-block;  
+    border-radius: 4px;
+    background-color: rgb(88, 91, 93);
+    color: white;
+    cursor: pointer;
+}
+.info_destaque button:hover{
+    background-color: rgb(66, 69, 70);
+}
+
+/* carousel */
+.carousel{
+    margin-top: 16px;
+    padding-bottom: 10px;
+    z-index: 10;
+}
+.carousel h3{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.item{
+    cursor: pointer;
+}
+
+.owl-dots{
+    position: initial;
+    margin-top: 16px !important; 
+}
+
+.owl-dot > span{
+    width: 16px !important;
+    height: 3px !important;
+    opacity: 1 !important;
+    border-radius: none !important;
+}
+
+
+/* Footer */
+.footer{
+    overflow: hidden;
+    padding: 72px 0 32px;
+    background-color: rgb(26, 26, 26);
+}
+
+.footer_content{
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.footer_logo{
+    margin-bottom: 16px;
+    font-weight: 500px;
+}
+
+.footer_logo_img{
+    width: 80px;
+}
+
+.footer_description{
+    margin-bottom: 16px;
+}
